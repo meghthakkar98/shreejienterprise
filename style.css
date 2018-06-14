@@ -2,6 +2,8 @@
 	margin: 0;
 }
 
+	
+
 #img1
 {
 	height: 180px;	
@@ -73,10 +75,10 @@ h1,h2,h3,h4,h5,h6
 	text-align: justify;
 	color:#000000;
 	font-family: "avenir", sans-serif;
-	font-size: 20px;
-	padding-left: 70px;
+	font-size: 16px;
+	padding-left: 65px;
 	height: 200px;
-	width: 400px;
+	width: 450px;
 	float: left;
 }
 
@@ -110,6 +112,7 @@ h1,h2,h3,h4,h5,h6
 #panelhome
 {
 	background-color: #ffffff;			
+
 }
 
 #panelabt,#panelprod,#panelcont
