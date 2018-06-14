@@ -43,13 +43,13 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-        $("#fliphome").css("color", "#3399ff"); 
+        $("#fliphome").css("color", "#e74c3c"); 
     });
 
 
 $(document).ready(function(){
     $("#fliphome").click(function(){
-        $("#fliphome").css("color", "#3399ff"); 
+        $("#fliphome").css("color", "#e74c3c"); 
     });
 });
 
@@ -99,7 +99,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#flipabt").click(function(){
-        $("#flipabt").css("color", "#3399ff"); 
+        $("#flipabt").css("color", "#e74c3c"); 
     });
 });
 
@@ -150,7 +150,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#flipprod").click(function(){
-        $("#flipprod").css("color", "#3399ff"); 
+        $("#flipprod").css("color", "#e74c3c"); 
     });
 });
 
@@ -201,7 +201,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#flipcont").click(function(){
-        $("#flipcont").css("color", "#3399ff"); 
+        $("#flipcont").css("color", "#e74c3c"); 
     });
 });
 
@@ -257,13 +257,13 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-        $("#mfliphome").css("color", "#000000"); 
+        $("#mfliphome").css("color", "#e74c3c"); 
     });
 
 
 $(document).ready(function(){
     $("#mfliphome").click(function(){
-        $("#mfliphome").css("color", "#000000"); 
+        $("#mfliphome").css("color", "#e74c3c"); 
     });
 });
 
@@ -319,7 +319,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#mflipabt").click(function(){
-        $("#mflipabt").css("color", "#000000"); 
+        $("#mflipabt").css("color", "#e74c3c"); 
     });
 });
 
@@ -376,7 +376,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#mflipprod").click(function(){
-        $("#mflipprod").css("color", "#000000"); 
+        $("#mflipprod").css("color", "#e74c3c"); 
     });
 });
 
@@ -434,7 +434,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#mflipcont").click(function(){
-        $("#mflipcont").css("color", "#000000"); 
+        $("#mflipcont").css("color", "#e74c3c"); 
     });
 });
 
