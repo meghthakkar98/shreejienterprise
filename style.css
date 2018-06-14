@@ -128,13 +128,13 @@ h1,h2,h3,h4,h5,h6
 	float: left;
 	font-size: 21px;
 	margin-top: 1%;
-	color:#ffffff;
+	color:#e74c3c;
 	padding-left: 12%;	 
 }
 
 #fliphome:hover,#flipabt:hover,#flipprod:hover,#flipcont:hover
 {
-	color: blue;
+	
 	cursor: pointer;
 }
 
