@@ -59,6 +59,10 @@
 		font-family: "avenir", sans-serif;
 	}
 
+	#paraset
+	{
+		margin-top: 5%;
+	}
 
 	#pr
 	{
@@ -148,7 +152,7 @@
 	div.gallery img 
 	{
 	    width: 100%;
-	    height: auto;
+	    height: 250px;
 	}
 
 	div.desc 
