@@ -2,6 +2,18 @@
 	margin: 0;
 }
 
+.homeimg
+{
+	width: 300px;
+	height: 300px;	
+}
+
+.logo
+{
+	height: 18%;
+	width: 18%;
+	margin-top: 2%;	
+}
 	
 
 #img1
@@ -66,7 +78,7 @@ h1,h2,h3,h4,h5,h6
 
 #prodset
 {
-	padding-top: 500px;
+	padding-top: 200px;
 }
 
 
@@ -106,7 +118,7 @@ h1,h2,h3,h4,h5,h6
 	left: 0;
 	width:100%;
 	display: block;
-	padding-left: 14%;
+	padding-right:6%;
 }	
 					
 #panelhome
@@ -123,45 +135,50 @@ h1,h2,h3,h4,h5,h6
 }				
 
 
-#fliphome,#flipabt,#flipprod,#flipcont
+#fliplogo,#fliphome,#flipabt,#flipprod,#flipcont
 {
-	float: left;
-	font-size: 21px;
+	float: left;	
+	font-size: 25px;
 	margin-top: 1%;
-	color:#e74c3c;
-	padding-left: 12%;	 
+	color:#ffffff;
+	padding-left: 8%;	 
+	/*transition: width 2s, height 2s, transform 1s;*/
 }
 
-#fliphome:hover,#flipabt:hover,#flipprod:hover,#flipcont:hover
+#fliplogo:hover,#fliphome:hover,#flipabt:hover,#flipprod:hover,#flipcont:hover
 {
-	
+/*	transform: rotate(360deg);*/
 	cursor: pointer;
+
 }
 
+i{
+	transition: width 2s, height 2s, transform 1s;	
+}			
+
+i:hover
+{
+	transform: rotate(360deg);	
+}
 			
 div.gallery
 {
-	border: 1px solid #3385ff	;
-}
-
-div.gallery:hover 
-{
-	border: 1px solid #777;
+	border: 5px solid #3385ff	;
 }
 
 div.gallery img 
 {
-	padding-top: 10px;
+	margin-left: 30px;
     font-family: "avenir", sans-serif;
     width: 0 auto;
-    height: 250px;
+    height: 350px;
 }
 
 div.desc
 {
 	background-color:#d9d9d9;	
-	border: 1px solid #777;
-    padding: 15px;
+	border: 5px solid #777;
+    padding: 5px;
     text-align: center;
 }
 
@@ -464,7 +481,10 @@ br
 /*animation or slideshow*/
 
 * {box-sizing: border-box;}
-.mySlides {}
+.mySlides {
+	height: 90%;
+	width: 90%;
+}
 	
 /* Slideshow container */
 .slideshow-container {
