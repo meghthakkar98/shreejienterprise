@@ -1,4 +1,4 @@
-		<!DOCTYPE html>
+<!DOCTYPE html>
 		<html>
 		<head>
 			
@@ -9,7 +9,7 @@
 			<meta name="description" content="Whole-Sale Laminates">
 			<link rel="icon" href="logo2.jpg">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-			<link href="//fonts.googleapis.com/css?family=Dancing+Script|Roboto|Pacifico|Material+Icons" rel="stylesheet">											
+			<link href="//fonts.googleapis.com/css?family=Dancing+Script|Roboto|Pacifico|Material+Icons" rel="stylesheet">								<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.1.min.js"></script>			
 			<title>Shreeji Enterprise</title>
 
 		</head>
@@ -58,7 +58,61 @@
 		        </div>
 			</div>
 
-				
+	
+  <script type="text/javascript">
+    // Adjusted version of https://codepen.io/bramus/pen/yikfd
+// This version also reverses the animation when elements that got slide into view
+// succesively slide out of view again.
+
+// In case you're wondering about that `.css('top', $animatable.css('top'))` part:
+// -> it's the magic part in this code as it triggers layout, so the browser will 
+// render after having deleted the animate-in class and having added the animate-out
+// class. That way the animation-play-state will actually change from running to 
+// paused to running again, thus triggering the start of the animation
+
+jQuery(function($) {
+  
+  // Function which adds the 'animated' class to any '.animatable' in view
+  var doAnimations = function() {
+    
+    // Calc current offset and get all animatables
+    var offset = $(window).scrollTop() + $(window).height(),
+        $animatables = $('.animatable');
+    
+    // Check all animatables and animate them if necessary
+    $animatables.each(function(i) {
+       var $animatable = $(this);
+      
+      // Items that are "above the fold"
+      if (($animatable.offset().top + $animatable.height() + 50) < offset) {
+        
+        // Item previously wasn't marked as "above the fold": mark it now
+        if (!$animatable.hasClass('animate-in')) {
+          $animatable.removeClass('animate-out').css('top', $animatable.css('top')).addClass('animate-in');
+        }
+
+      }
+      
+      // Items that are "below the fold"
+      else if (($animatable.offset().top + $animatable.height() + 50) > offset) {
+        
+        // Item previously wasn't marked as "below the fold": mark it now
+        if ($animatable.hasClass('animate-in')) {
+          $animatable.removeClass('animate-in').css('top', $animatable.css('top')).addClass('animate-out');
+        }
+
+      }
+
+    });
+
+  };
+  
+  // Hook doAnimations on scroll, and trigger a scroll
+  $(window).on('scroll', doAnimations);
+  $(window).trigger('scroll');
+
+});
+</script>			
 
 		<center><img id="img1" src="https://raw.githubusercontent.com/meghthakkar98/shreejienterprise/gh-pages/logo.jpg"></center><br>
 
@@ -137,27 +191,27 @@
 
 		</script>
 		 
-				<div id="paraset">
-					<h4 style="color: black;padding-left: 7px;"><i class="fa fa-file-text-o" style="font-size:20px;color:#0044cc;padding-right: 10px;"></i>About Us:</h4><br>
+				<div id="paraset" class="block animatable fadeInUp">
+					<h4 style="color: black;padding-left: 7px;"><i class="fa fa-file-text-o" style="font-size:20px;color:#ffffff;padding-right: 10px;"></i>About Us:</h4><br>
 				
 					<p>In 1975 We started our Business, We started Whole-Sale Market Business in 2007, Now we are TOP Dealers of <b><u style="color=#ff0000;font-size:17px;">DURIAN,CEDARLAM,DIXON,AROMA</u></b> in all-over Gujarat.Now freshly we also become distributor of <b><u style="color=#00ffff;font-size:17px;">ENDEAVOUR(DURIAN)</u></b> and expanding it .</p>
 
 				</div>
 
-				<div id="paraset">
-					<h4 style="color: black;padding-left: 7px;"><i class="fa fa-check-square-o" style="font-size:20px;color:#0044cc;padding-right: 10px;"></i>Why  us:	</h4><br>
+				<div id="paraset" class="block animatable fadeInUp">
+					<h4 style="color: black;padding-left: 7px;"><i class="fa fa-check-square-o" style="font-size:20px;color:#ffffff;padding-right: 10px;"></i>Why  us:	</h4><br>
 					
 					<p>From since last 43 years we are selling the best products of the best companies at very fair price with 100% customer satisfaction.</p>
 				</div>	
 
-				<div id="paraset">	
-					<h4 style="color: black;padding-left: 7px;"><i class="fa fa-bolt" style="font-size:20px;color:#0044cc;padding-right: 10px; "></i>what's our main focus:</h4><br>
+				<div id="paraset" class="block animatable fadeInUp">	
+					<h4 style="color: black;padding-left: 7px;"><i class="fa fa-bolt" style="font-size:20px;color:#ffffff;padding-right: 10px; "></i>what's our main focus:</h4><br>
 					<p>We have started Selling new brand known as <b><u style="color=#00ffff;font-size:17px;">ENDEAVOUR (DURIAN)</u></b> and expanding its selling all over in Ahmedabad and Gujarat and on other branch we are Offical Dealers of <b><u style="color=#ff0000;font-size:17px;">DURIAN , CEDARLAM, DIXON, AROMA .</u></b></p>
 				</div><br>
 				
 					<!--SETTING THE IMAGES-->
 			<div id="prodset">	
-					<h3 id="headers"><i class="fa fa-television" style="font-size:30px;color:#0044cc;text-align: center;"></i>Products:</h3>
+					<h3 id="headers"><i class="fa fa-television" style="font-size:30px;color:#ffffff;text-align: center;"></i>Products:</h3>
 					<br>
 					<div class="responsive">
 		  				<div class="gallery">
@@ -199,13 +253,13 @@
 		<div id="panelabt">
 			<!--panel about-->
 					
-					<h3><i class="fa fa-globe" style="font-size:20px;color: #0044cc;padding-right: 10px;"></i>Goal of the Company:</h3>
+					<h3><i class="fa fa-globe" style="font-size:20px;color: #ffffff;padding-right: 10px;"></i>Goal of the Company:</h3>
 
 					<div id="paraabtus">
 							<p>After 19 successful years of the company.We already done well in all Districts of Gujarat and slowly we are expanding our business to allover INDIA.We want to EXPORT and IMPORT our Own Brand which is known as NEPTUNE.We are also in Interested Exporting and Importing Other good brands also.We want to welcome our new partners and also excited to work with them.</p>
 					</div><br>
 
-					<h3><i class="fa fa-file-text-o" style="font-size:20px;color:#0044cc;padding-right: 10px;"></i>More About us:</h3>
+					<h3><i class="fa fa-file-text-o" style="font-size:20px;color:#ffffff;padding-right: 10px;"></i>More About us:</h3>
 					<div id="paraabtus">
 						<p>Since 2005 we are main Distributor of PANASONIC Telephones,Cordless and Fax Machines in the market.We are top Distributors of WD,SeaGate and Toshiba surveillance hdd. We were the only distributor of the INTEX mobile for 3 years in Ahmedabad.We were the Distributor of the PHILIPS MP3 Player for 2 years.We are also doing dealing with products companies like NETGEAR,D-LINK,DIGISOL,BINATONE,TARGUS and TENDA.</p><br>
 						
@@ -213,7 +267,7 @@
 
 					</div><br>
 
-					<h3><i class="fa fa-drivers-license-o" style="font-size:20px;color: #0044cc;padding-right: 10px;"></i>Founder of Neptune Telecom:</h3>
+					<h3><i class="fa fa-drivers-license-o" style="font-size:20px;color: #ffffff;padding-right: 10px;"></i>Founder of Neptune Telecom:</h3>
 					<img id="imgabt" src="image6.jpg" alt="Dhruvkumar">	
 					<div id="paraabtus">
 							<p>	In 1998 Mr.Dhruvkumar Decided to start a Company , today it is known as Neptune Telecom . He is Founder of the Company .He has real quality of the Business Techniques in this field ,all kind of special skills like Marketing ,Dealership and Corporate satisfaction and Main approach is Customer Satisfaction is fully filled by him. Under him Company has already completed their successful 19 years with 100% customer satisfaction. 
@@ -244,7 +298,7 @@
 								
 					</div><br>
 
-					<h3><i class="fa fa-drivers-license" style="font-size:20px;color: #0044cc;padding-right: 10px;"></i>Business Development Manager of Neptune Telecom:</h3>
+					<h3><i class="fa fa-drivers-license" style="font-size:20px;color: #ffffff;padding-right: 10px;"></i>Business Development Manager of Neptune Telecom:</h3>
 					<img id="imgabt" src="image7.jpeg">
 					<div id="paraabtus">
 							<p> Mr.Kamal is Business Development Manager of the Neptune Telecom . He is having Young and Aggressive mind in this filed Which helps to make future making decision for the Company.His special skill is Communicate with their customer and their satisfaction,also with dealing with their Dealers and Corporates with their satisfaction is also important which is easily done by Mr.Kamal. </p>
@@ -276,7 +330,7 @@
 					
 
 					<!--skills section-->
-					<h3><i class="fa fa-briefcase" style="font-size:20px;color: #0044cc;padding-right: 10px;"></i>Skills of the Company :</h3>
+					<h3><i class="fa fa-briefcase" style="font-size:20px;color: #ffffff;padding-right: 10px;"></i>Skills of the Company :</h3>
 					<div class="skills">
 								<p class="skills">Marketing:</p>
 								<div class="container">
@@ -462,7 +516,7 @@
 								</div><br>
 
 								<h2>Email us @</h2><br>
-								<div id="pfot"><a style="color: #ffff1a" href="mailto:meetthakkar31@gmail.com">meetthakkar31@gmail.com</a></div><br>
+								<div id="pfot"><a style="color:#f6b93b " href="mailto:meetthakkar31@gmail.com">meetthakkar31@gmail.com</a></div><br>
 
 								<h2>Working Hours:</h2><br>
 								<div id="pfot">Monday to Saturday: <u style="color: white">10 am to 8 pm</u> </div><br>
