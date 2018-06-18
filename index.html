@@ -447,9 +447,23 @@ jQuery(function($) {
 
 			<h3>Google Location:</h3>
 
-			<div class="mhide"> <center> <img src="map2.jpg"></div></center>
-			<div class="deskhide"> <img id="img3" src="map.jpg"> </div>
+		<div id="map" style="width:100%;height:500px;margin-top: 5%;"></div>
 
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var myCenter = new google.maps.LatLng(23.013602, 72.643653); 
+  var mapOptions = {center: myCenter, zoom: 5};
+  var map = new google.maps.Map(mapCanvas,mapOptions);
+  var marker = new google.maps.Marker({
+    position: myCenter,
+    icon: "pinkball.png"
+  });
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN3D4PaVMe4-0oDmoABULRjC8rK3IbVE4&callback=myMap"></script>
 				<div class="main">
 				<div class="info">Contact Us:</div>
 				<form action="mail_handler.php" method="post" name="form" class="form-box">
