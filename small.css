@@ -3,13 +3,12 @@
 }	
 	body
 	{
-		background-image: url("https://preview.ibb.co/c6sKvJ/wood.jpg");
+		background-image: url("https://image.ibb.co/c5XRaJ/wood2.jpg") ;
 	}
 
 	#img1
 	{	
 
-		margin: auto;			
 		width: 100%;
 		display: block;
 		text-align: center;
@@ -22,8 +21,7 @@
 #img6
 {
 	border:2px solid #777;
-	height: 50%;	
-	margin: auto;			
+	height: 50%;				
 	width: 50%;
 	display: block;
 	text-align: center;
@@ -60,6 +58,7 @@
 	h1,h2,h3,h4,h5,h6
 	{
 		font-family: "avenir", sans-serif;
+		color: #ffffff;
 	}
 
 	#paraset
@@ -74,7 +73,7 @@
 
 	p
 	{
-		color:#000000;
+		color:#ffffff;
 		word-spacing: 2px;
 		font-family: "avenir", sans-serif;
 		font-size: 17px;
@@ -125,14 +124,14 @@
 
 	#panelhome
 	{
-		background-image: url("wood.jpg");
+		background-image: url("https://image.ibb.co/c5XRaJ/wood2.jpg");
 	}
 
 	#panelabt,#panelprod,#panelcont
 	{
 		display: none;
 		width: 100%;		
-		background-image: url("wood.jpg");
+		background-image: url("https://image.ibb.co/c5XRaJ/wood2.jpg");
 	}				
 
 
@@ -445,8 +444,8 @@ br
 	
 /* Slideshow container */
 .slideshow-container {
-  max-width: 450px; 
-  
+ width: 100%;
+ height: 50%;
 }
 
 /* Caption text */
