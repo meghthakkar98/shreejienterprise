@@ -12,7 +12,7 @@ $configs: (
   ),
   chart-two: (
     svgSize: 200px,
-    percentage: 60,
+    percentage: 50,
     strokeWidth: 15px,
     backgroundColor: #305556,
     foregroundColor: #d0f09e,
