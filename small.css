@@ -3,7 +3,7 @@
 }	
 	body
 	{
-		background-image: url("https://image.ibb.co/c5XRaJ/wood2.jpg") ;
+		background-color: #ffffff;
 	}
 
 	#img1
@@ -58,7 +58,7 @@
 	h1,h2,h3,h4,h5,h6
 	{
 		font-family: "avenir", sans-serif;
-		color: #ffffff;
+		color: #000000;
 	}
 
 	#paraset
@@ -73,12 +73,15 @@
 
 	p
 	{
-		color:#ffffff;
+		color:#000000;
 		word-spacing: 2px;
 		font-family: "avenir", sans-serif;
 		font-size: 17px;
 		text-align: center;
 		margin: 0 auto ;
+	}
+	i{
+
 	}
 
 #botresnavgi	
@@ -124,14 +127,14 @@
 
 	#panelhome
 	{
-		background-image: url("https://image.ibb.co/c5XRaJ/wood2.jpg");
+		
 	}
 
 	#panelabt,#panelprod,#panelcont
 	{
 		display: none;
 		width: 100%;		
-		background-image: url("https://image.ibb.co/c5XRaJ/wood2.jpg");
+		
 	}				
 
 
@@ -532,11 +535,11 @@ br
   -o-animation-fill-mode: both;
   animation-fill-mode: both;
   
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -ms-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
 
   -webkit-animation-play-state: running;
   -moz-animation-play-state: running;
@@ -554,11 +557,11 @@ br
   -o-animation-fill-mode: both;
   animation-fill-mode: both;
   
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -ms-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
 
   -webkit-animation-play-state: running;
   -moz-animation-play-state: running;
